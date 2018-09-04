@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 
-function showBanner(props) {
+function ShowBanner(props) {
     if(props.time > 45) {
       return (
         <div className="rest_block"> Отдых </div> 
@@ -41,7 +41,7 @@ class Clock extends React.Component {
         render() {
           return (
             <div>
-              <div><showBanner time={this.state.date.getSeconds()}/></div>
+              <div><ShowBanner time={this.state.date.getSeconds()}/></div>
               <h1>Текущее время {this.state.date.toLocaleTimeString()} </h1>
             </div>)
         }
